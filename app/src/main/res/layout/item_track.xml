@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/trackImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/trackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trackImage"
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/trackArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trackTitle"
+        android:layout_marginTop="8dp"
+        android:textColor="#808080" />
+
+    <TextView
+        android:id="@+id/trackCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trackArtist"
+        android:layout_marginTop="8dp"
+        android:textColor="#808080" />
+
+    <TextView
+        android:id="@+id/trackReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trackCategory"
+        android:layout_marginTop="8dp"
+        android:textColor="#808080" />
+
+    <TextView
+        android:id="@+id/trackPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/trackReleaseDate"
+        android:layout_marginTop="8dp"
+        android:textColor="#DAD0D0" />
+
+    <Button
+        android:id="@+id/listenButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/trackPrice"
+        android:layout_marginTop="16dp"
+        android:text="Listen Now"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="#1976D2" />
+
+</RelativeLayout>
