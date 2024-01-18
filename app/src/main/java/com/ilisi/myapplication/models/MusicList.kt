@@ -3,6 +3,10 @@ package com.ilisi.myapplication.models
 import com.google.gson.annotations.SerializedName
 
 data class MusicList(
+    val feed: Feed
+)
+
+data class Feed(
     val entry: List<MusicItem>
 )
 
